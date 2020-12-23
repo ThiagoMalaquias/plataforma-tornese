@@ -1,0 +1,668 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Nixie One', cursive !important;
+}
+
+/*--------------------- Navigation Section -----------------------*/
+
+.navbar{
+  background-image: linear-gradient(to right, #449ec8, #0b6b97);
+  padding: 0 30px !important;
+}
+
+.navbar .navbar-brand img{
+  height: 80px;
+  margin-left: 15px;
+}
+
+.navbar-nav li{
+  padding: 0 5px;
+}
+
+.navbar-nav li a{
+  color: white !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12pt;
+  text-align: center;
+}
+
+.navbar-nav li a:hover{
+  background: rgba(0,0,0,.3);
+  transition: .5s all;
+  padding: 10px;
+}
+
+.navbar .navbar-collapse .collapse-form{
+  display: none !important;
+}
+
+.navbar .navbar-collapse .collapse-form{
+  background-image: linear-gradient(to right, #449ec8, #0b6b97);
+  color:#fff;
+  padding-top: 3%;
+}
+
+.navbar .navbar-collapse .collapse-form .input-pesquisa{
+  background-color: rgba(0,0, 0,.3); 
+  color: #fff; 
+  font-weight: bold; 
+  border: 0; 
+  border-radius: 0;
+}
+
+.navbar .navbar-collapse .collapse-form .input-pesquisa::placeholder{
+  color: #ccc; 
+  text-transform: uppercase;
+  font-size: 13pt;
+}
+
+.navbar .navbar-collapse .collapse-form .input-pesquisa:focus{
+  box-shadow: none;
+}
+
+.navbar .navbar-collapse .collapse-form .input-style{
+  background-color: #0b6b97; 
+  color: #fff; 
+  font-weight: bold;
+  border: 0; 
+  border-radius: 0;
+}
+
+.navbar .navbar-collapse .icon-search{
+  color: #fff;
+}
+
+.navbar .navbar-toggler{
+  outline: none !important;
+  border: none;
+}
+
+
+
+/*--------------------- Collapse Buscar Section --------------------*/
+
+.navbar .navbar-collapse .collapse-form{
+  background-image: linear-gradient(to right, #449ec8, #0b6b97);
+  color:#fff;
+  padding-top: 3%;
+}
+
+#collapseExample{
+  background-image: linear-gradient(to right, #449ec8, #0b6b97);
+}
+
+#collapseExample .input-pesquisa{
+  background-color: rgba(0,0, 0,.3); 
+  color: #fff; 
+  font-weight: bold; 
+  border: 0; 
+  border-radius: 0;
+}
+
+#collapseExample .input-pesquisa::placeholder{
+  color: #ccc; 
+  text-transform: uppercase;
+  font-size: 13pt;
+}
+
+#collapseExample .input-pesquisa:focus{
+  box-shadow: none;
+}
+
+
+/*--------------------- Banner Section --------------------*/
+#banner{
+  background-image: linear-gradient(to right, #449ec8, #0b6b97);
+  color:#fff;
+  padding-top: 3%;
+}
+
+#banner .banner{
+  margin-bottom: 35px;
+}
+
+#banner .promo-title{
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+#banner .play-bnt{
+  width: 45px;
+  margin: 20px;
+}
+
+#banner a{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#banner .modal-content{
+  background-color: #00000070;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  margin-top: 100px;
+}
+
+#banner .modal-content .modal-header{
+  padding: 4px 10px;
+  border-bottom: 0;
+}
+
+#banner .modal-content .iframe{
+  width: 100%; 
+  height: 250px;
+}
+
+#banner .wave{
+  width: 100%;
+  height: 100px;
+  background-image: url(../image/wave.png);
+  background-size: 1000px 100px;
+}
+
+#banner .wave .wave1{
+  animation: animate 1s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0px;
+}
+
+#banner .wave .wave2{
+  animation: animate2 2s linear infinite;
+  z-index: 999;
+  opacity: .5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+#banner .wave .wave3{
+  animation: animate2 2s linear infinite;
+  z-index: 998;
+  opacity: .2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+#banner .wave .wave4{
+  animation: animate2 4s linear infinite;
+  z-index: 997;
+  opacity: .7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+@keyframes animate{
+  0%{
+      background-position-x: 0;
+  }
+  100%{
+      background-position-x: 1000px;
+  }
+}
+@keyframes animate2{
+  0%{
+      background-position-x: 0;
+  }
+  100%{
+      background-position-x: -1000px;
+  }
+}
+
+
+
+/*--------------------- Services Section --------------------*/
+#services{
+  background-image: linear-gradient(to bottom, #fff, #f1f1f1);
+  padding-top: 60px;
+}
+
+#services .title{
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#services .title::before{
+  content: ' ';
+  background:#0b6b97;
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(63px);
+}
+
+#services .service-img{
+  height: 100px;
+  margin-top: 20px;
+}
+
+#services .services{
+  padding: 20px;
+}
+
+#services .services h5{
+  padding: 5px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#services .services .h5-align{
+  margin-bottom: 40px;
+}
+
+#services .services p{
+    font-weight: 600;
+    font-size: 11pt;
+}
+
+#services .services .btn{
+  background-image: linear-gradient(to right,  #0b6b97 0%, #449ec8 51%, #0b6b97 100%);
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10pt;
+  font-weight: 600;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 5px;
+}
+
+#services .services .btn:hover{
+  background-position: right center; 
+}
+
+#services .services .btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+#services .bottom-img{
+  width: 100%;
+}
+
+
+/*--------------------- Course Section --------------------*/
+
+#courses .title{
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#courses .title::before{
+  content: ' ';
+  background: #0b6b97;
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(63px);
+}
+
+#courses .courses{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 50px auto;
+}
+
+#courses .courses > div{
+  flex: 1 1 300px;
+  margin: 10px;
+  font-weight: 600;
+}
+
+#courses .courses img{
+  max-width: 100%;
+  display: block;
+}
+
+#courses .courses .content-legend{
+  margin: 10px;
+}
+
+#courses .courses h6{
+  padding-top: 5px ;
+  font-weight: 600;
+  font-size: 18pt;
+  margin: 0;
+}
+
+#courses .courses span{
+  font-size: 10pt;
+}
+
+#courses .courses p{
+  font-size: 13pt;
+  margin-top: 25px;
+}
+
+/*--------------------- Linea Color Section --------------------*/
+
+#linea .linea{
+  height: 30px;
+  background-color: #0b6b97;
+}
+
+/*--------------------- Banner Community Section --------------------*/
+
+#banner-community {
+  background: #093c54;
+  color:#fff;
+  padding: 2%  0%;
+}
+
+#banner .banner-community{
+  margin-bottom: 35px;
+}
+
+#banner-community .promo-title{
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 60px;
+  text-transform: uppercase;
+}
+
+#banner-community .banner-community{
+  margin-bottom: 35px;
+}
+
+#banner-community .banner-community .btn{
+  background-image: linear-gradient(to right,  #0b6b97 0%, #449ec8 51%, #0b6b97 100%);
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15pt;
+  font-weight: 600;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 5px;
+}
+
+#banner-community .banner-community .btn:hover{
+  background-position: right center; 
+}
+
+#banner-community .banner-community .btn-primary.focus, .btn-primary:focus {
+  box-shadow: none;
+}
+#banner-community .banner-community .btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/*-------------------------  Comentarios Section -----------------------*/
+
+#comentario {
+  background: #f1f1f1;
+  padding: 5% 5%;
+}
+
+#comentario .title{
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 20pt;
+}
+
+#comentario .title::before{
+  content: ' ';
+  background: #0b6b97;
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(80px);
+}
+
+#comentario .div-image-user {
+  position: relative;
+  top: 55px;
+  z-index: 9;
+  left: 126px
+}
+
+#comentario .img-user {
+  width: 35%;
+  border-radius: 100%;
+  margin-right: 14px;
+  border: 10px solid #f1f1f1
+}
+
+#comentario .card-comentario {
+  padding-right: 20px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0;
+  border-bottom: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to right, #449ec8, #0b6b97);
+}
+
+#comentario .div-comentario-text {
+  padding: 70px 0 0 21px;
+  text-align: center
+}
+
+#comentario .p-comentario {
+  text-indent: 24px;
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#comentario .p-nome-user {
+  text-align: right
+}
+
+.mobile {
+  display: none;
+}
+
+.slider {
+  width: 95%;
+  margin: 100px auto;
+  margin-top: 0
+}
+
+.slick-slide {
+  margin: 0 20px
+}
+
+.slick-slide img {
+  width: 100%
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000 !important;
+}
+
+
+/*---------------------------- Products Section ---------------------------------*/
+
+#products .title{
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#products .title::before{
+  content: ' ';
+  background: #0b6b97;
+  height: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(63px);
+}
+
+#products{
+  padding: 4% 0px;
+}
+
+#products .products{
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+#products .products h6{
+  margin-top: 10px;
+  font-size: 19px;
+  font-weight: bold;
+} 
+
+#products .products .value-products{
+  margin-top: 35px;
+  margin-bottom: 0px;
+  font-size: 18px;
+  color: #093c54;
+  font-weight: bold;
+} 
+
+#products .products .parcela-products{
+  font-size: 16px;
+  font-weight: bold;
+} 
+
+#products .products .btn{
+  padding: 5px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 13pt;
+  border: 1px solid #0b6b97;
+  letter-spacing: .07em;
+  background-size: 200% auto;
+  color: #0b6b97;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+#products .products .btn:hover{
+  background-color: #0b6b97;
+  color: #fff;
+  transition: 0.5s;
+}
+
+#products .products .btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/*-------------------------  Email Marketing Section -----------------------*/
+
+#email-marketing{
+  padding: 5% 10%;
+  background-color: #f7f7f7;
+}
+
+#email-marketing .email-marketing h5{
+  font-weight: bold;
+  color: rgba(0,0, 0,.7);
+}
+
+#email-marketing .email-marketing h6{
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: rgba(0,0, 0,.5);
+}
+
+#email-marketing .email-marketing .btn{
+  background-image: linear-gradient(to right,  #0b6b97 0%, #449ec8 51%, #0b6b97 100%);
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15pt;
+  font-weight: 600;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 5px;
+}
+
+#email-marketing .email-marketing .btn:hover{
+  background-position: right center; 
+}
+
+#email-marketing .email-marketing .btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/*-------------------------  Footer Section -----------------------*/
+
+#footer .footer{
+  padding: 15px 30px;
+  background-color: #0b6b97;
+  color: #fff;
+}
+
+#footer .footer a{
+  color: #fff;
+  margin-right: 5px;
+  text-decoration: none;
+  font-size: 13pt;
+  font-weight: bold;
+}
+
+#footer .footer a:hover{
+  color: rgba(0,0,0,.8);
+}
+
+#footer span{
+  float: right;
+}
+
+#footer .footer svg{
+  font-size: 18pt;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#footer .empresa{
+  background: #093c54;
+  font-size: 10pt;
+  padding: 15px 30px;
+  color: #fff;
+  font-weight: 600;
+}
+
+#icon-whatsapp{
+  position: fixed;
+  top: calc(100% - 50px);
+  right: 0px;
+  text-align: center;
+  width: 100px;
+  z-index: 0;
+}
+
+#icon-whatsapp .icon-whatsapp{
+  background-color: #25cc63;
+  border-radius: 30px;
+  padding: 15px 20px;
+  font-size: 9pt;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+  
