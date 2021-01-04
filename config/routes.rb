@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   
-  resources :alunos
-  resources :cursos
-  resources :professores
-  root to: "home#index"
+  root to: 'templates#home'
+  get '/cursos', to: "templates#cursos"
+
+  namespace :admin do
+    resources :alunos, :cursos, :professores
+  end
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
